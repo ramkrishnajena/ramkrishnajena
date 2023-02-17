@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+    background-color: #212731;
+}
+
+.heading {
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 60px;
+    font-size: 25px;
+    width: 100%;
+}
+
+.contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #393e46;
+    color: white;
+    padding: 15px 15px;
+}
+
+.c-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: #fff;
+
+}
+
+.c-form input {
+    width: 300px;
+    height: 48px;
+    background-color: #212731;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.c-form input[type=text],
+input[type=email] {
+    padding: 0px 15px;
+
+}
+
+.c-form input[type=button] {
+    width: 330px;
+
+}
+
+.messages {
+    width: 300px;
+    padding: 10px 15px;
+    background-color: #212731;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.c-form .messages {
+    height: 130px;
+    text-align: justify;
+
+}
+
+.heading-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 50px 0 0 0;
+}
+
+.heading-bottom>.contact {
+    font-size: 28px;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 50px 0 0 0;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+}
+
+.email img {
+    width: 35px;
+    align-items: center;
+    padding: 0 0 0 15px;
+
+}
+
+.linkedin {
+    display: flex;
+    align-items: center;
+}
+
+.linkedin img {
+    width: 35px;
+    align-items: center;
+    padding: 0 0 0 15px;
+
+}
+
+.address {
+    display: flex;
+    align-items: center;
+}
+
+.address img {
+    width: 35px;
+    padding: 0 0 0 15px;
+    align-items: center;
+
+}
+
+.back-btn {
+    margin-top: 45%;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.back-btn a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.back-btn img {
+    width: 40px;
+}
+
+
+@media only screen and (max-width: 834px) {
+    .contact-us {
+        width: 300px;
+        height: 100%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .c-form {
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .c-form input {
+        width: 250px;
+    }
+
+    .c-form input[type=button] {
+        width: 280px;
+    }
+
+    .messages {
+        width: 250px;
+    }
+
+    .heading-bottom {
+        margin: 25px 0 0;
+        align-items: center;
+    }
+
+    .contact-details {
+        margin: 30px 0 0 0;
+    }
+
+    .back-btn {
+        margin-top: 20px;
+        align-items: flex-end;
+    }
+}
