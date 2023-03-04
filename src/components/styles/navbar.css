@@ -1,0 +1,137 @@
+.navbar {
+  width: 5%;
+  min-height: 100vh !important;
+  height: 100%;
+  background: #0b0b13;
+  border-right: 1px solid hsla(0, 0%, 100%, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.navbar__logo {
+  width: 100%;
+  height: 3em;
+  background: #3a98b9;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.navbar__logo {
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+}
+.navbar__menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-top: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.navbar__menu ul {
+  list-style: none;
+}
+.navbar__menu ul li {
+  width: 100%;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 0.5px solid #ffffff1f;
+  padding: 8px 0;
+  cursor: pointer;
+}
+.navbar__menu ul li svg {
+  color: #fff;
+  font-size: 2.3rem;
+}
+li.nav__link svg:hover {
+  font-size: 2rem;
+  transition: ease-out 0.4s;
+}
+
+.active svg {
+  color: #f99417 !important;
+}
+
+a:visited {
+  color: #ffffff !important;
+}
+
+.block {
+  display: block;
+}
+.home__mobile--menu {
+  z-index: 1;
+}
+/* media query */
+@media (max-width: 480px) {
+  .navbar {
+    width: 60px;
+    height: 100vh;
+  }
+
+  .home__mobile--menu {
+    width: 60px;
+    height: 60px;
+    background: #f99417;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    border-radius: 50%;
+  }
+  .home__mobile--menu svg {
+    display: block;
+    width: 50%;
+    height: 100%;
+    font-size: 30px;
+    color: #ffff;
+    margin: 0 auto;
+  }
+  .none {
+    display: none;
+    transition: opacity 0.15s ease-in-out 0s, transform 0.25s ease-in-out 0s;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
+
+@media (min-width: 478px) and (max-width: 767px) {
+  .navbar {
+    width: 8%;
+  }
+  .none {
+    display: none;
+    transition: opacity 0.15s ease-in-out 0s, transform 0.25s ease-in-out 0s;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+  .home__mobile--menu {
+    width: 60px;
+    height: 60px;
+    background: #f99417;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    border-radius: 50%;
+  }
+  .home__mobile--menu svg {
+    display: block;
+    width: 50%;
+    height: 100%;
+    font-size: 30px;
+    color: #ffff;
+    margin: 0 auto;
+  }
+}
+/* @media (min-width: 769px) and (max-width: 800px) {
+} */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .navbar {
+    width: 6%;
+  }
+}

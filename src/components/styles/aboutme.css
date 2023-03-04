@@ -1,0 +1,124 @@
+.section {
+  width: 100%;
+  height: 100vh;
+}
+.about {
+  width: inherit;
+  height: 100vh;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: #0e0e17;
+  flex-wrap: wrap;
+}
+.about__img {
+  border-radius: 50%;
+  margin: auto;
+  max-height: 358px;
+  max-width: 356px;
+  overflow: hidden;
+  border: 5px solid #f99417;
+}
+.about__img img {
+  max-width: 100%;
+  filter: grayscale(1);
+}
+.about__photo--social__icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 25px;
+  flex-wrap: wrap;
+}
+.about__photo--social__icons svg:nth-child(odd) {
+  margin-top: -42px;
+}
+.about__photo--social__icons svg:nth-child(2) {
+  margin-top: -20px;
+}
+.about__photo--social__icons svg {
+  color: #f99417 !important;
+}
+.about__desc {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.about__desc h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: #f99417;
+  padding-bottom: 20px;
+}
+.about__desc--para {
+  width: 600px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.7em;
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    width: 95%;
+    height: fit-content;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .about__img {
+    max-width: 258px;
+    max-height: 258px;
+  }
+  .about__img img {
+    max-width: 100%;
+  }
+  .about__desc {
+    width: auto;
+    padding: 15px 5px;
+  }
+  .about__desc h4 {
+    text-align: left;
+  }
+  .about__desc--para {
+    width: 100%;
+  }
+}
+
+@media (min-width: 478px) and (max-width: 767px) {
+  .about {
+    width: auto;
+    height: fit-content;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .about__img {
+    max-width: 258px;
+    max-height: 258px;
+  }
+  .about__img img {
+    max-width: 100%;
+  }
+  .about__desc {
+    width: 100%;
+    padding: 15px 5px;
+  }
+  .about__desc h4 {
+    text-align: left;
+  }
+  .about__desc--para {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .about {
+    width: 100%;
+    height: fit-content;
+    padding: 25px 0;
+  }
+}

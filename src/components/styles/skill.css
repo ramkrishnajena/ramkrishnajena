@@ -1,0 +1,140 @@
+.skill {
+  width: 95%;
+}
+.skill--details {
+  width: 92%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0px 0 0px;
+  flex-wrap: wrap;
+}
+.skill--details h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: #f99417;
+  padding: 0 0 80px 80px;
+}
+.skill__education {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.education {
+  width: 20%;
+  height: fit-content;
+  background: #05234d73;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 25px 25px;
+  border-radius: 5%;
+}
+.skill__education p {
+  width: 250px;
+  padding-bottom: 5px;
+}
+.education__details p:nth-child(odd) {
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  color: rgb(158, 154, 154);
+}
+.education__details p:nth-child(2) {
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
+/* skill style starts */
+
+.technical--skill {
+  width: 50%;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+.skill--graph {
+  width: 100%;
+  height: 20px;
+  color: #fff;
+}
+.skill--bar {
+  border: 1px solid #f58700;
+  background: #b9b8b888;
+  border-radius: 5%;
+}
+.learning {
+  color: #fff;
+}
+
+/* media query */
+
+@media screen and (max-width: 478px) {
+  .skill--details {
+    flex-direction: row;
+    height: fit-content;
+    padding: 20px 5px;
+    justify-content: center;
+  }
+  .skill--details h4 {
+    padding-bottom: 40px;
+  }
+  .technical--skill {
+    width: fit-content;
+    padding-left: 0;
+    justify-content: center;
+  }
+  .skill__education {
+    align-items: center;
+    justify-content: center;
+  }
+  .education {
+    width: 250px;
+    margin-bottom: 50px;
+    padding: 25px;
+  }
+}
+
+@media (min-width: 478px) and (max-width: 767px) {
+  .skill--details {
+    width: 98%;
+    height: 100vh;
+    flex-direction: column;
+    height: fit-content;
+    padding: 20px 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .skill__education {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .skill--details h3 {
+    padding-left: 80px;
+  }
+  .education {
+    width: 50%;
+  }
+  .technical--skill {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .skill--details {
+  }
+  .education {
+    width: 35%;
+    padding: 2% 2%;
+  }
+}
