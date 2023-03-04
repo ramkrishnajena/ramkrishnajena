@@ -21,13 +21,13 @@ const AboutMe = () => {
         <div className="about__desc">
           <h4>About Me</h4>
           <p className="about__desc--para">
-            I'm a Freelancer Front-end Developer with over 3 years of
-            experience. I'm from San Francisco. I code and create web elements
-            for amazing people around the world. I like work with new people.
-            New people new Experiences. I'm a Freelancer Front-end Developer
-            with over 3 years of experience. I'm from San Francisco. I code and
-            create web elements for amazing people around the world. I like work
-            with new people. New people new Experiences.
+            I am an experienced front-end web developer with extensive knowledge
+            of HTML, CSS, and JavaScript, as well as proficiency in Bootstrap5,
+            Tailwind CSS, and ReactJS. I possess a strong sense of design
+            aesthetics and a deep understanding of user experience, enabling me
+            to create visually captivating and responsive websites that keep
+            users engaged. My expertise in modern web development technologies
+            allows me to develop scalable and efficient code.
           </p>
           <div className="about__desc--details">
             <p></p>
