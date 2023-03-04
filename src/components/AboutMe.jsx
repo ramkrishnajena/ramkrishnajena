@@ -1,7 +1,6 @@
 import { FacebookOutlined, GitHub, LinkedIn } from "@mui/icons-material";
 import React from "react";
-
-import profilrPhoto from "../asset/profilephoto.png";
+import profilePhoto from "../asset/profilephoto.png";
 import "./styles/aboutme.css";
 
 const AboutMe = () => {
@@ -10,7 +9,7 @@ const AboutMe = () => {
       <div className="about" id="about">
         <div className="about__photo">
           <div className="about__img">
-            <img src={profilrPhoto} alt="myphoto" />
+            <img src={profilePhoto} alt="myphoto" />
           </div>
           <div className="about__photo--social__icons">
             <FacebookOutlined />
