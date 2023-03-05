@@ -13,10 +13,7 @@ const Navbar = () => {
   function openMenu() {
     setMenu(!menu);
   }
-  const [active, setActive] = useState(false);
-  function activeMenu() {
-    setMenu(!active);
-  }
+  const [active, setActive] = useState("#home");
   return (
     <>
       <div className={!menu ? "navbar" : "none"}>
@@ -25,34 +22,52 @@ const Navbar = () => {
         </div>
         <div className="navbar__menu">
           <ul>
-            <li className="nav__link active">
-              <a href="#home">
+            <li
+              className={active === "#home" ? "active nav__link" : "nav__link"}
+            >
+              <a href="#home" onClick={() => setActive("#home")}>
                 <HomeIcon />
               </a>
             </li>
 
-            <li className="nav__link">
-              <a href="#about" className="">
+            <li
+              className={active === "#about" ? "active nav__link" : "nav__link"}
+            >
+              <a href="#about" onClick={() => setActive("#about")}>
                 <PersonIcon />
               </a>
             </li>
-            <li className="nav__link">
-              <a href="#portfolio">
-                <DescriptionIcon />
-              </a>
-            </li>
-            <li className="nav__link">
-              <a href="#skill">
+            <li
+              className={
+                active === "#education" ? "active nav__link" : "nav__link"
+              }
+            >
+              <a href="#education" onClick={() => setActive("#education")}>
                 <WorkIcon />
               </a>
             </li>
-            <li className="nav__link">
-              <a href="#blog">
+            <li
+              className={
+                active === "#portfolio" ? "active nav__link" : "nav__link"
+              }
+            >
+              <a href="#portfolio" onClick={() => setActive("#portfolio")}>
+                <DescriptionIcon />
+              </a>
+            </li>
+            <li
+              className={active == "#blog" ? "active nav__link" : "nav__link"}
+            >
+              <a href="#blog" onClick={() => setActive("#blog")}>
                 <WebAssetIcon />
               </a>
             </li>
-            <li className="nav__link">
-              <a href="#contact">
+            <li
+              className={
+                active == "#contact" ? "active nav__link" : "nav__link"
+              }
+            >
+              <a href="#contact" onClick={() => setActive("#contact")}>
                 <CallIcon />
               </a>
             </li>
