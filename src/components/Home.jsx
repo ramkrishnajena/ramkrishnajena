@@ -15,7 +15,7 @@ const Home = () => {
         <div className="home__left">
           <p>Hello, My name is</p>
           <h3>Ramkrishna Jena</h3>
-          <div className="home__left--status">Web Developer</div>
+          <div className="home__left--status animation-home">Web Developer</div>
           <div className="home__left--btn">
             <p>Download CV</p>
           </div>

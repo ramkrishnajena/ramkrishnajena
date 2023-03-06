@@ -7,7 +7,7 @@ const Portfolio = () => {
     <section className="works">
       <div className="portfolio" id="portfolio">
         <h4>My Projects</h4>
-        <div className="portfolio__projects ">
+        <div className="portfolio__projects">
           <Project
             image="https://nairo.ibthemespro.com/img/portfolio/m-portfolio-6.jpg"
             alt="web"

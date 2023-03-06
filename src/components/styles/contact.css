@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Lato:wght@300;400&family=Merriweather:wght@300&family=Roboto:wght@100&display=swap");
+.contact {
+  width: 95%;
+  height: fit-content;
+  background: #000;
+  color: #fff;
+}
+.contact__section {
+  padding: 10% 7%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact__section--one {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.contact__section--one h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2em;
+}
+.contact__section--one p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  padding: 2px 0 15px 0;
+}
+.contact__address,
+.contact__email,
+.contact__number {
+  display: flex;
+  text-decoration: none;
+  padding: 5px 0;
+}
+.contact__address svg,
+.contact__email svg,
+.contact__number svg {
+  font-size: 30px;
+  padding-right: 10px;
+  color: #f99417;
+  display: flex;
+  align-items: center;
+}
+.contact__address p,
+.contact__email p,
+.contact__number p {
+  font-family: "Roboto Slab", sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  color: #838282;
+  font-weight: 700;
+}
+
+.contact__section--two {
+  width: 50%;
+}
+.contact__form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+input {
+  border: 1px solid #707070;
+  margin: 2% 1%;
+  padding: 0 10px;
+  outline: none;
+  background: transparent;
+  border-radius: 2px;
+}
+.contact__form .name,
+.contact__form .email {
+  width: 42%;
+  height: 35px;
+}
+.contact__form .subject {
+  width: 90%;
+  height: 35px;
+}
+.contact__form .message {
+  width: 90%;
+  height: 100px;
+}
+.contact__form .submit-btn {
+  width: 120px;
+  height: 40px;
+  color: #000000;
+  font-weight: 600;
+  font-family: "Lato", "sans-serif";
+  font-size: 15px;
+  background-color: #f99417;
+  border-radius: 4px;
+  transition: ease 0.5s;
+}
+.contact__form .submit-btn:hover {
+  margin-top: 10px;
+  background: transparent;
+  color: #fff;
+  /* transition: ease 0.5s; */
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .contact {
+    width: 100%;
+  }
+  .contact__section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__section--one {
+    align-items: center;
+    width: 95%;
+  }
+  .contact__details {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .contact__form {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+  }
+  /* .contact__form .name,
+  .contact__form .email {
+    width: 100%;
+  } */
+  .contact__section--two {
+    width: 100%;
+  }
+}

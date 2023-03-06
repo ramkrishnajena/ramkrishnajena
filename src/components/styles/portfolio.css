@@ -1,10 +1,15 @@
-.portfolio {
-  width: inherit;
+.works {
+  width: 100%;
   min-height: 100vh;
   height: 100%;
   background: #0e0e17;
+}
+.portfolio {
+  width: 100%;
+  height: 100%;
+
   display: flex;
-  padding: 100px 0 0 0px;
+  padding: 100px 0 100px 0;
   flex-direction: column;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -23,13 +28,30 @@
   justify-content: center;
   gap: 50px;
 }
+.project--details:nth-child(odd) {
+  animation-name: scale-up-ver-center;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+.project--details:nth-child(even) {
+  animation-name: scale-up-ver-center-even;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
 .project--details {
   width: 350px;
-  height: 350px;
+  width: 350px;
+  max-height: 100%;
   position: relative;
   cursor: pointer;
-  transition: opacity 0.15s ease-in-out 0s, transform 0.25s ease-in-out 0s;
-  /* transform: translate(-50%, -50%) scale(0.7); */
 }
 .project--details img {
   width: 350px;
@@ -82,33 +104,54 @@
   font-size: 20px;
 }
 
-.at-item {
-  width: 100px;
-  height: 100px;
-  background-color: #ffe672;
-
-  animation-name: scale-up-ver-center;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-delay: 0.8s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: none;
-
-  /* shorthand
-  animation: scale-up-ver-center 1s linear 0s 1 normal none;*/
-}
 @keyframes scale-up-ver-center {
   0% {
-    transform: scale(0.3);
+    transform: translateX(-500px);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes scale-up-ver-center-even {
+  0% {
+    opacity: 0;
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+    opacity: 0;
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+    opacity: 0.2;
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+    opacity: 0.5;
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
   }
 }
 /* media query */
 
 @media screen and (max-width: 480px) {
+  .skill {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
   .portfolio {
     width: 100%;
     padding-top: 25px;

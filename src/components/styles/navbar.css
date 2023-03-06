@@ -43,7 +43,6 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  padding: 5px 0;
   cursor: pointer;
 }
 .navbar__menu ul li::after {

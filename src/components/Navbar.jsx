@@ -43,7 +43,7 @@ const Navbar = () => {
               }
             >
               <a href="#education" onClick={() => setActive("#education")}>
-                <WorkIcon />
+                <DescriptionIcon />
               </a>
             </li>
             <li
@@ -52,7 +52,7 @@ const Navbar = () => {
               }
             >
               <a href="#portfolio" onClick={() => setActive("#portfolio")}>
-                <DescriptionIcon />
+                <WorkIcon />
               </a>
             </li>
             <li

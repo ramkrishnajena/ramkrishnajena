@@ -1,8 +1,9 @@
 .skill {
   width: 95%;
+  height: 100%;
 }
 .skill--details {
-  width: 92%;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -106,7 +107,12 @@
   }
 }
 
-@media (min-width: 478px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
+  .skill {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
   .skill--details {
     width: 98%;
     height: 100vh;
@@ -121,20 +127,29 @@
     gap: 20px;
   }
   .skill--details h3 {
-    padding-left: 80px;
+    padding-left: 1rem;
   }
   .education {
-    width: 50%;
+    width: fit-content;
   }
   .technical--skill {
     width: 90%;
   }
+  .education__details p {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  .skill--details {
+  .skill {
+    height: 100%;
   }
   .education {
     width: 35%;
     padding: 2% 2%;
+  }
+  .about__desc {
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
 }
