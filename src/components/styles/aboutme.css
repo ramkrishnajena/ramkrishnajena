@@ -2,8 +2,10 @@
   width: 99.99%;
   height: 100%;
   background: #0e0e17;
+  scroll-snap-type: y proximity;
 }
 .about {
+  scroll-snap-align: center;
   width: 93%;
   height: 100vh;
   padding-left: 80px;
@@ -12,6 +14,7 @@
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  scroll-snap-align: center;
 }
 .about__img {
   border-radius: 50%;

@@ -1,8 +1,10 @@
 .works {
   width: 100%;
-  min-height: 100vh;
   height: 100%;
+  min-height: 100vh;
   background: #0e0e17;
+  scroll-snap-align: center;
+  transition: ease-in 0.5s;
 }
 .portfolio {
   width: 100%;
@@ -30,29 +32,30 @@
 }
 .project--details:nth-child(odd) {
   animation-name: scale-up-ver-center;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-delay: 0.5s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: none;
-}
-.project--details:nth-child(even) {
-  animation-name: scale-up-ver-center-even;
-  animation-duration: 2s;
+  animation-duration: 0.8s;
   animation-timing-function: linear;
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: none;
 }
+.project--details:nth-child(even) {
+  animation-name: scale-up-ver-center-even;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
 .project--details {
-  width: 350px;
   width: 350px;
   max-height: 100%;
   position: relative;
   cursor: pointer;
 }
+
 .project--details img {
   width: 350px;
   height: 350px;
@@ -83,6 +86,12 @@
   position: absolute;
   top: 50%;
 }
+.project__tech a {
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 5px;
+}
 .project__tech p {
   text-align: center;
   margin: 0 auto;
@@ -90,7 +99,7 @@
   font-family: "Quicksand", sans-serif;
   font-size: 1rem;
   color: #ffffff;
-  padding: 2px;
+  padding: 3px;
 }
 .project__tech p:nth-child(1) {
   font-size: 25px;
@@ -101,13 +110,18 @@
   border: 0.2px dotted black;
 }
 .project__tech p:nth-child(3) {
-  font-size: 20px;
+  font-size: 18px;
+  margin-top: 5px;
 }
 
 @keyframes scale-up-ver-center {
   0% {
-    transform: translateX(-500px);
+    transform: translateX(-100px);
     opacity: 0;
+  }
+  50% {
+    transform: translateX(-50px);
+    opacity: 0.5;
   }
   100% {
     transform: translateX(0);
@@ -116,34 +130,19 @@
 }
 @keyframes scale-up-ver-center-even {
   0% {
-    opacity: 0;
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    transform: scale3d(1.25, 0.75, 1);
-    opacity: 0;
-  }
-  40% {
-    transform: scale3d(0.75, 1.25, 1);
+    transform: translateX(-150px);
     opacity: 0;
   }
   50% {
-    transform: scale3d(1.15, 0.85, 1);
-    opacity: 0.2;
-  }
-  65% {
-    transform: scale3d(0.95, 1.05, 1);
+    transform: translateX(-100px);
     opacity: 0.5;
   }
-  75% {
-    transform: scale3d(1.05, 0.95, 1);
-    opacity: 0.8;
-  }
   100% {
-    transform: scale3d(1, 1, 1);
+    transform: translateX(0);
     opacity: 1;
   }
 }
+
 /* media query */
 
 @media screen and (max-width: 480px) {

@@ -1,5 +1,8 @@
 import React from "react";
 import Project from "../elements/Project";
+import banklet from "../asset/Banklet.jpg";
+import ytdownload from "../asset/ytdownload.jpg";
+import rkPortfolio from "../asset/ramkrishnajena.JPG";
 import "./styles/portfolio.css";
 
 const Portfolio = () => {
@@ -9,51 +12,27 @@ const Portfolio = () => {
         <h4>My Projects</h4>
         <div className="portfolio__projects">
           <Project
-            image="https://nairo.ibthemespro.com/img/portfolio/m-portfolio-6.jpg"
+            image={banklet}
             alt="web"
             tech="HTML, CSS, Js"
-            link="#"
+            link="https://github.com/ramkrishnajena/banklet"
             about="Banklet - Banking app for user"
             sclass="at-item"
           />
           <Project
-            image="https://nairo.ibthemespro.com/img/portfolio/m-portfolio-6.jpg"
+            image={ytdownload}
             alt="web"
-            tech="HTML"
-            link="#"
-            about="Banklet - Banking app for user"
+            tech="HTML,CSS,JS"
+            link="https://github.com/ramkrishnajena/yt-downloader"
+            about="YT Downloader"
             sclass="at-item"
           />
           <Project
-            image="https://nairo.ibthemespro.com/img/portfolio/m-portfolio-6.jpg"
+            image={rkPortfolio}
             alt="web"
-            tech="HTML"
-            link="#"
-            about="Banklet - Banking app for user"
-            sclass="at-item"
-          />
-          <Project
-            image="https://nairo.ibthemespro.com/img/portfolio/m-portfolio-6.jpg"
-            alt="web"
-            tech="HTML,CSS, Js"
-            link="#"
-            about="Banklet - Banking app for user"
-            sclass="at-item"
-          />
-          <Project
-            image="https://nairo.ibthemespro.com/img/portfolio/m-portfolio-6.jpg"
-            alt="web"
-            tech="HTML"
-            link="#"
-            about="Banklet - Banking app for user"
-            sclass="at-item"
-          />
-          <Project
-            image="https://nairo.ibthemespro.com/img/portfolio/m-portfolio-6.jpg"
-            alt="web"
-            tech="HTML"
-            link="#"
-            about="Banklet - Banking app for user"
+            tech="REACT"
+            link="https://github.com/ramkrishnajena/ramkrishnajena"
+            about="Ramkrishna Jena - Portfolio Websites"
             sclass="at-item"
           />
         </div>

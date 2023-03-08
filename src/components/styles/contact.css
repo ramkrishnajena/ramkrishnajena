@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&family=Lato:wght@300;400&family=Merriweather:wght@300&family=Roboto:wght@100&display=swap");
 .contact {
   width: 95%;
-  height: fit-content;
+  height: 100vh;
   background: #000;
   color: #fff;
+  scroll-snap-align: center;
+  transition: ease 0.5s;
 }
 .contact__section {
   padding: 10% 7%;
@@ -51,6 +53,7 @@
   font-size: 1rem;
   color: #838282;
   font-weight: 700;
+  padding: 1% 0;
 }
 
 .contact__section--two {
@@ -68,6 +71,7 @@ input {
   outline: none;
   background: transparent;
   border-radius: 2px;
+  color: #fff;
 }
 .contact__form .name,
 .contact__form .email {
@@ -91,13 +95,14 @@ input {
   font-size: 15px;
   background-color: #f99417;
   border-radius: 4px;
-  transition: ease 0.5s;
+  transition: ease-in-out 0.5s;
+  margin-top: 10px;
 }
 .contact__form .submit-btn:hover {
   margin-top: 10px;
   background: transparent;
+  border: 1px solid #707070;
   color: #fff;
-  /* transition: ease 0.5s; */
 }
 @media (min-width: 300px) and (max-width: 800px) {
   .contact {
@@ -127,5 +132,10 @@ input {
   } */
   .contact__section--two {
     width: 100%;
+  }
+  .contact__form .name,
+  .contact__form .email {
+    width: 41%;
+    height: 35px;
   }
 }

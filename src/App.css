@@ -12,6 +12,7 @@ body {
 .main {
   padding-left: 5%;
 }
+
 @media screen and (max-width: 480px) {
   .main {
     padding: 0;

@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <section className="homepage">
-      <div className="home" id="home">
+    <section className="homepage" id="home">
+      <div className="home">
         <div className="home__contacts">
           <p>+91-7008799608</p>
           <p>+91-7852999606</p>

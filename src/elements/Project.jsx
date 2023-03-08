@@ -8,7 +8,9 @@ const Project = ({ image, alt, tech, link, about, sclass }) => {
         <div className="project__tech">
           <p>{about}</p>
           <p>{tech}</p>
-          <p>View{link}</p>
+          <p>
+            <a href={link}>Visit</a>
+          </p>
         </div>
       </div>
     </div>

@@ -7,6 +7,10 @@ import WebAssetIcon from "@mui/icons-material/WebAsset";
 import CallIcon from "@mui/icons-material/Call";
 import { MenuOpen, MenuOutlined } from "@mui/icons-material";
 import "./styles/navbar.css";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+import AboutMe from "./AboutMe";
+import Home from "./Home";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -20,12 +24,13 @@ const Navbar = () => {
         <div className="navbar__logo">
           <h3>R</h3>
         </div>
-        <div className="navbar__menu">
+
+        <nav className="navbar__menu">
           <ul>
             <li
               className={active === "#home" ? "active nav__link" : "nav__link"}
             >
-              <a href="#home" onClick={() => setActive("#home")}>
+              <a href="/#home" onClick={() => setActive("#home")}>
                 <HomeIcon />
               </a>
             </li>
@@ -33,7 +38,7 @@ const Navbar = () => {
             <li
               className={active === "#about" ? "active nav__link" : "nav__link"}
             >
-              <a href="#about" onClick={() => setActive("#about")}>
+              <a href="/#about" onClick={() => setActive("#about")}>
                 <PersonIcon />
               </a>
             </li>
@@ -56,7 +61,7 @@ const Navbar = () => {
               </a>
             </li>
             <li
-              className={active == "#blog" ? "active nav__link" : "nav__link"}
+              className={active === "#blog" ? "active nav__link" : "nav__link"}
             >
               <a href="#blog" onClick={() => setActive("#blog")}>
                 <WebAssetIcon />
@@ -64,7 +69,7 @@ const Navbar = () => {
             </li>
             <li
               className={
-                active == "#contact" ? "active nav__link" : "nav__link"
+                active === "#contact" ? "active nav__link" : "nav__link"
               }
             >
               <a href="#contact" onClick={() => setActive("#contact")}>
@@ -72,7 +77,7 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
       <div className="home__mobile--menu" onClick={openMenu}>
         {!menu ? <MenuOpen /> : <MenuOutlined />}
