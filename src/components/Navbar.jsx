@@ -7,10 +7,6 @@ import WebAssetIcon from "@mui/icons-material/WebAsset";
 import CallIcon from "@mui/icons-material/Call";
 import { MenuOpen, MenuOutlined } from "@mui/icons-material";
 import "./styles/navbar.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
-import AboutMe from "./AboutMe";
-import Home from "./Home";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -22,7 +18,7 @@ const Navbar = () => {
     <>
       <div className={!menu ? "navbar" : "none"}>
         <div className="navbar__logo">
-          <h3>R</h3>
+          <h3 className="text-pop-up-top">R</h3>
         </div>
 
         <nav className="navbar__menu">

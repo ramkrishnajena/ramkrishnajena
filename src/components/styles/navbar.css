@@ -12,7 +12,7 @@
 }
 .navbar__logo {
   width: 100%;
-  height: 3em;
+  height: 5rem;
   background: #3a98b9;
   color: #fff;
   text-align: center;
@@ -20,10 +20,16 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.navbar__logo {
-  font-size: 25px;
-  font-family: "Courier New", Courier, monospace;
+.navbar__logo h3 {
+  font-size: 3rem;
+  font-family: "Ubantu", sans-serif;
+  margin: auto;
 }
+h3.text-pop-up-top {
+  -webkit-animation: text 1.5s ease-in-out infinite both;
+  animation: text 1.5s ease-in-out infinite both;
+}
+
 .navbar__menu {
   width: 100%;
   height: auto;
@@ -79,6 +85,42 @@ a:visited {
 .home__mobile--menu {
   z-index: 1;
 }
+
+@keyframes text {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
 /* media query */
 @media (max-width: 480px) {
   .navbar {
