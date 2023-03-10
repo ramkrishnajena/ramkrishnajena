@@ -34,10 +34,10 @@
   padding-top: 25px;
   flex-wrap: wrap;
 }
-.about__photo--social__icons svg:nth-child(odd) {
+.about__photo--social__icons a:nth-child(odd) {
   margin-top: -42px;
 }
-.about__photo--social__icons svg:nth-child(2) {
+.about__photo--social__icons a:nth-child(2) {
   margin-top: -20px;
 }
 .about__photo--social__icons svg {
