@@ -1,7 +1,6 @@
 import React from "react";
-// import photo from "../asset/profilephoto.png";
 import "./styles/home.css";
-import { Link } from "react-router-dom";
+import { useMenuContext } from "../context/useMenuContext";
 
 const Home = () => {
   return (

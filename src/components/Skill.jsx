@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import Education from "../elements/Education";
 import SkillGraph from "../elements/SkillGraph";
 import "./styles/skill.css";
+import { useMenuContext } from "../context/useMenuContext";
 
 const Skill = () => {
   return (

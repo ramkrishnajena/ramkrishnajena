@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Check, LinkedIn, LocationOn, Send } from "@mui/icons-material";
 

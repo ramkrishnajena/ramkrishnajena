@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import HomeIcon from "@mui/icons-material/Home";
 import PersonIcon from "@mui/icons-material/Person";
 import DescriptionIcon from "@mui/icons-material/Description";
@@ -7,20 +7,20 @@ import WebAssetIcon from "@mui/icons-material/WebAsset";
 import CallIcon from "@mui/icons-material/Call";
 import { MenuOpen, MenuOutlined } from "@mui/icons-material";
 import "./styles/navbar.css";
+import { useMenuContext } from "../context/useMenuContext";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
-  function openMenu() {
-    setMenu(!menu);
-  }
+  const [page, setPage] = useState(0);
+  const openMenu = () => setMenu(!menu);
   const [active, setActive] = useState("#home");
+
   return (
     <>
       <div className={!menu ? "navbar" : "none"}>
         <div className="navbar__logo">
           <h3 className="text-pop-up-top">R</h3>
         </div>
-
         <nav className="navbar__menu">
           <ul>
             <li
@@ -28,6 +28,7 @@ const Navbar = () => {
             >
               <a href="/#home" onClick={() => setActive("#home")}>
                 <HomeIcon />
+                {/* {menu} */}
               </a>
             </li>
 
