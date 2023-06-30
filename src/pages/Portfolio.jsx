@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "../elements/Project";
+import Project from "../components/Project";
 import "./styles/portfolio.css";
 import { projectData } from "../projectData/ProjectsDetails";
 // let activePage = useContext(useMenuContext); // added to padd the portfolio data in future

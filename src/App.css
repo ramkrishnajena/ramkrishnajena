@@ -2,9 +2,11 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px solid rgb(255, 255, 255); */
 }
-
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
 body {
   background-color: #000;
 }

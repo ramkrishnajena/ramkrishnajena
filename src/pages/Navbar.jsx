@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import HomeIcon from "@mui/icons-material/Home";
 import PersonIcon from "@mui/icons-material/Person";
 import DescriptionIcon from "@mui/icons-material/Description";
@@ -15,68 +15,68 @@ const Navbar = () => {
   const openMenu = () => setMenu(!menu);
   const [active, setActive] = useState("#home");
 
+  useEffect(() => {
+    console.log(window.innerWidth < 767 && openMenu());
+  }, []);
+
   return (
     <>
       <div className={!menu ? "navbar" : "none"}>
-        <div className="navbar__logo">
-          <h3 className="text-pop-up-top">R</h3>
+        <div className='navbar__logo'>
+          <h3 className='text-pop-up-top'>R</h3>
         </div>
-        <nav className="navbar__menu">
+        <nav className='navbar__menu'>
           <ul>
             <li
-              className={active === "#home" ? "active nav__link" : "nav__link"}
-            >
-              <a href="/#home" onClick={() => setActive("#home")}>
+              className={active === "#home" ? "active nav__link" : "nav__link"}>
+              <a href='/#home' onClick={() => setActive("#home")}>
                 <HomeIcon />
                 {/* {menu} */}
               </a>
             </li>
 
             <li
-              className={active === "#about" ? "active nav__link" : "nav__link"}
-            >
-              <a href="/#about" onClick={() => setActive("#about")}>
+              className={
+                active === "#about" ? "active nav__link" : "nav__link"
+              }>
+              <a href='/#about' onClick={() => setActive("#about")}>
                 <PersonIcon />
               </a>
             </li>
             <li
               className={
                 active === "#education" ? "active nav__link" : "nav__link"
-              }
-            >
-              <a href="#education" onClick={() => setActive("#education")}>
+              }>
+              <a href='#education' onClick={() => setActive("#education")}>
                 <DescriptionIcon />
               </a>
             </li>
             <li
               className={
                 active === "#portfolio" ? "active nav__link" : "nav__link"
-              }
-            >
-              <a href="#portfolio" onClick={() => setActive("#portfolio")}>
+              }>
+              <a href='#portfolio' onClick={() => setActive("#portfolio")}>
                 <WorkIcon />
               </a>
             </li>
             <li
-              className={active === "#blog" ? "active nav__link" : "nav__link"}
-            >
-              <a href="#blog" onClick={() => setActive("#blog")}>
+              className={active === "#blog" ? "active nav__link" : "nav__link"}>
+              <a href='/blog' onClick={() => setActive("#blog")}>
                 <WebAssetIcon />
               </a>
             </li>
             <li
               className={
                 active === "#contact" ? "active nav__link" : "nav__link"
-              }
-            >
-              <a href="#contact" onClick={() => setActive("#contact")}>
+              }>
+              <a href='#contact' onClick={() => setActive("#contact")}>
                 <CallIcon />
               </a>
             </li>
           </ul>
         </nav>
       </div>
-      <div className="home__mobile--menu" onClick={openMenu}>
+      <div className='home__mobile--menu' onClick={openMenu}>
         {!menu ? <MenuOpen /> : <MenuOutlined />}
       </div>
     </>
